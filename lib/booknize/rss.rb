@@ -18,6 +18,7 @@ module Booknize
       rss = @rss
 
       book = GEPUB::Book.new
+      book.language = 'ja'
       book.set_primary_identifier(@uri, 'BookID', 'URL')
       book.add_title(channel.title, nil, GEPUB::TITLE_TYPE::MAIN)
 
@@ -27,6 +28,9 @@ module Booknize
           body = nil
           open(item.link) do |f|
             body = f.read
+          end
+          if formatter = Booknize::Formatter.get(@uri.host)
+            body = formatter.new(body).format!.content
           end
           book.add_item("text/#{i}.html").add_content(StringIO.new(body)).toc_text(item.title)
         end
