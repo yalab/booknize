@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<?xml-stylesheet href="http://d.hatena.ne.jp/rudeboyjet/rssxsl" type="text/xsl" media="screen"?>
+
+
+<rdf:RDF
+xmlns="http://purl.org/rss/1.0/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xml:lang="ja">
+<channel rdf:about="http://d.hatena.ne.jp/rudeboyjet/rss">
+<title>よしだメモ</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/</link>
+<description>よしだメモ</description>
+
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2013-07-02T01:37:49+09:00</dc:date>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="http://d.hatena.ne.jp/rudeboyjet/20121126/p1"/>
+<rdf:li rdf:resource="http://d.hatena.ne.jp/rudeboyjet/20111014/p1"/>
+<rdf:li rdf:resource="http://d.hatena.ne.jp/rudeboyjet/20111003/p1"/>
+<rdf:li rdf:resource="http://d.hatena.ne.jp/rudeboyjet/20110903/p1"/>
+<rdf:li rdf:resource="http://d.hatena.ne.jp/rudeboyjet/20110803/p1"/>
+</rdf:Seq>
+</items>
+</channel>
+
+
+
+<item rdf:about="http://d.hatena.ne.jp/rudeboyjet/20121126/p1">
+<title>[ruby][rails][hackathon] 沖縄Rails Hackathon に行ってきました</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/20121126/p1</link>
+<description>  地域Rubyiestコミュニティのminami.rb、okinawa.rb、shibuya.rbの共催で行われた 沖縄 Rails Hackathonに参加してきました。 11/17 に各地でアイデアソン。 11/23、11/24に沖縄でハッカソンという日程。 今回僕は大阪ミナミ(難波周辺)の地域Rubyiest コミュニティ minami.rb からチームBentenの一員として参加。 沖縄だけでも移動、本選、観光含めると4泊5日という長い日程なのでダイジェストでお送りします。  アイデアソン 11 ...</description>
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2012-11-26</dc:date>
+<dc:subject>ruby</dc:subject>
+<dc:subject>rails</dc:subject>
+<dc:subject>hackathon</dc:subject>
+</item>
+<item rdf:about="http://d.hatena.ne.jp/rudeboyjet/20111014/p1">
+<title> [android][scala] Scala で Android アプリを作成する環境を作る</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/20111014/p1</link>
+<description>  Ubuntu 11.10 リリースということで思い切ってクリーンインストールした結果、Scala + sbt で Android アプリを作る環境も作り直すことになりましたので、その時のメモを公開します。  JDK をインストール  $ sudo apt-get install openjdk-6-jdk   Scala をインストール  $ cd /tmp $ wget http://www.scala-lang.org/downloads/distrib/files/scala-2.9.1.fin ...</description>
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2011-10-14</dc:date>
+</item>
+<item rdf:about="http://d.hatena.ne.jp/rudeboyjet/20111003/p1">
+<title>[minamirb] minami.rbの第9回勉強会で発表してきました。</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/20111003/p1</link>
+<description>  一応僕も共同主催者だったような気がする大阪のミナミ(難波周辺をこのように呼ぶ)を中心に活動している地域rubyコミュニティ minami.rb の第9回勉強会が10/1に浪速区民センターでありまして、そこでgitのtipsについての発表を行なってきました。  発表資料「gitの使い方あれこれ」: http://www.slideshare.net/yalab/git-9518230  ちなみに宣伝ですが minami.rb は rails を中心としてその周辺技術(git、coffee-script、 ...</description>
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2011-10-03</dc:date>
+<dc:subject>minamirb</dc:subject>
+</item>
+<item rdf:about="http://d.hatena.ne.jp/rudeboyjet/20110903/p1">
+<title> [android][scala] レッッツVOAリリース</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/20110903/p1</link>
+<description>  レッッツVOAというAndroidアプリをリリースしました。 https://market.android.com/details?id=org.yalab.bourbon&#38;feature=search_result  概要 レッッツVOAとは VOA News というアメリカのニュースサイトの英語初心者向けコンテンツ Special English(http://www.voanews.com/learningenglish/home/) で英語の勉強をするためのアプリケーションです。 スク ...</description>
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2011-09-03</dc:date>
+</item>
+<item rdf:about="http://d.hatena.ne.jp/rudeboyjet/20110803/p1">
+<title> [ruby] railsで古いバージョンで新しいプロジェクトを作る</title>
+<link>http://d.hatena.ne.jp/rudeboyjet/20110803/p1</link>
+<description>   $ rails _2.3.12_ PROJECT_NAME  ちなみにrakeを使う時なども  $ rake _0.8.7_  が使えます。  </description>
+<dc:creator>rudeboyjet</dc:creator>
+<dc:date>2011-08-03</dc:date>
+</item>
+</rdf:RDF>
