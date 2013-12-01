@@ -4,13 +4,27 @@ require 'test_helper'
 module Booknize
   class RssTest < Minitest::Test
     def setup
-      stub_request(:get, "d.hatena.ne.jp/rudeboyjet/rss").to_return(body: File.read(File.expand_path("../../fixtures/rss", __FILE__)) )
+      Dir.glob(File.expand_path("../../fixtures/*", __FILE__)).each do |f|
+        basename = File.basename(f)
+        path = "d.hatena.ne.jp/rudeboyjet/#{basename}"
+        if basename != 'rss'
+          path += '/p1'
+        end
+        stub_request(:get, path).to_return(body: File.read(f))
+      end
+      @rss = Booknize::Rss.new("http://d.hatena.ne.jp/rudeboyjet/rss")
     end
 
     def test_get
       body = nil
-      rss = Booknize::Rss.new("http://d.hatena.ne.jp/rudeboyjet/rss")
-      assert_equal 'よしだメモ', rss.title
+      assert_equal 'よしだメモ', @rss.title
+    end
+
+    def test_to_epub
+      path = "/tmp/test.epub"
+      File.unlink(path) if File.exists?(path)
+      @rss.to_epub("/tmp/test.epub")
+      assert_equal true, File.exists?(path)
     end
   end
 end

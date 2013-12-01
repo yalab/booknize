@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'rss'
+require 'gepub'
 require 'active_support/core_ext/module/delegation'
 require "booknize/version"
 require "booknize/rss"

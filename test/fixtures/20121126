@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title> 沖縄Rails Hackathon に行ってきました - よしだメモ</title>
+<link rel="start" href="/" title="よしだメモ">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/rudeboyjet/20111014/p1" title=" [android][scala] Scala で And...">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/css/base.css?5d7f38e4a6d82f044c81959ae4de5445d7f238cd" type="text/css" media="all">
+
+<link rel="stylesheet" href="http://d.st-hatena.com/statics/theme/hatena_simple-red/hatena_simple-red.css?7d508c1badce2cbd3cd47b372a7bdc3e8f794141" type="text/css" media="all">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/rudeboyjet/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/rudeboyjet/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/rudeboyjet/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/rudeboyjet/opensearch/diary.xml" title="よしだメモ内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/rudeboyjet/opensearch/archive.xml" title="よしだメモ内一覧検索" />
+
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/wh_favicon.ico">
+
+
+
+
+<style type="text/css">
+<!-- 
+span.highlight {
+	color: black;
+	background-color: yellow;
+}
+img.photo {
+	float: right;
+	margin: 10px;
+	border: 0;
+}
+a.keyword {
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+-->
+</style>
+
+
+<script type="text/javascript">if(/[\x3c\x3e\x22]/.test(location.hash))location.hash=location.hash.replace(/[\x3c\x3e\x22]/g,'');if(/[\x3c\x3e]/.test(document.referrer))location.href=location.href;</script>
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content=" 沖縄Rails Hackathon に行ってきました - よしだメモ">
+<meta property="og:url" content="http://d.hatena.ne.jp/rudeboyjet/20121126/p1">
+<meta property="og:description" content=" 地域Rubyiestコミュニティのminami.rb、okinawa.rb、shibuya.rbの共催で行われた 沖縄 Rails Hackathonに..">
+<meta property="og:site_name" content="はてなダイアリー">
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/rudeboyjet/20121126/p1">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="rudeboyjet">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/rudeboyjet/mobile?date=20121126&section=p1" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/rudeboyjet/20121126/p1"
+  trackback:ping="http://d.hatena.ne.jp/rudeboyjet/20121126/p1"
+  dc:title="[ruby][rails][hackathon] 沖縄Rails Hackathon に行ってきました"
+  dc:identifier="http://d.hatena.ne.jp/rudeboyjet/20121126/p1" />
+</rdf:RDF>
+-->
+
+
+
+<link rel="canonical" href="http://d.hatena.ne.jp/rudeboyjet/20121126/p1">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site:id" content="3790171">
+
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('rudeboyjet');
+Hatena.DiaryName  = new Hatena.User('rudeboyjet');
+
+</script>
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/adcolor.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/quick_pager.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/diary_utils.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/max_width_fotolife.js?2d5c0a4915fdb8930122a506dbf154b9db674a3b"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://d.st-hatena.com/statics/js/jquery-1.4.2.min.js?7d508c1badce2cbd3cd47b372a7bdc3e8f794141"></script>
+<script type="text/javascript">
+  jQuery.noConflict()(function($){
+    var j$ = jQuery;
+  });
+</script>
+
+
+
+
+</head>
+<body>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="banner">
+<tr>
+<td bgcolor="#FFFFFF" nowrap>
+<a href="http://www.hatena.ne.jp/"><img border="0" src="http://d.hatena.ne.jp/images/hatena_wh.gif" width="104" height="40" alt="Hatena::"></a><a href="http://d.hatena.ne.jp/"><img border="0" src="http://d.hatena.ne.jp/images/diarywh.gif" width="60" height="40" alt="ブログ(Diary)"></a></td>
+<td valign="bottom" align="left" bgcolor="#FFFFFF" width="60%" nowrap><form method="GET" action="/search" style="margin: 0;"><font color="#FFFFFF" size="2">&nbsp;&nbsp;<input type="text" name="word" value="" size="18" style="font-size: 8pt">&nbsp;<input type="hidden" name="name" value="rudeboyjet"><input type="image" name="diary" alt="日記" src="http://d.hatena.ne.jp/images/search_diarywh.gif" align="top" style="width:34px;height:20px;border:0px">&nbsp;<input type="image" name="submit" alt="検索" src="http://d.hatena.ne.jp/images/searchwh.gif" align="top" style="width:34px;height:20px;border:0px"><br><img border="0" src="http://d.hatena.ne.jp/images/dot.gif" width="1" height="3" alt=""></font></form></td>
+<td align="right" bgcolor="#FFFFFF"><a href="http://www.hatena.ne.jp/"><img border="0" src="http://d.hatena.ne.jp/images/hatenawh.gif" width="82" height="40" alt="はてな"></a></td>
+</tr>
+<tr>
+<td width="100%" bgcolor="#999999" colspan="3"><img border="0" src="http://d.hatena.ne.jp/images/dot.gif" width="1" height="1" alt=""></td>
+</tr>
+<tr>
+<td width="100%" bgColor="#ffffff" colspan="3">
+<div align="center">
+<center>
+<table cellSpacing="0" cellPadding="2" width="100%" border="0">
+<tbody>
+<tr>
+<td bgcolor="#FFFFFF" width="50%" nowrap><font color="#999999" size="2">&nbsp;ようこそゲストさん&nbsp;</font></td>
+<td bgcolor="#FFFFFF" nowrap align="center"><a href="http://d.hatena.ne.jp/rudeboyjet/" style="text-decoration:none; font-weight:100;"><font size="2" color="#999999">ブログトップ</font></a></td>
+<td bgcolor="#FFFFFF" nowrap align="center"><a href="http://d.hatena.ne.jp/rudeboyjet/archive" style="text-decoration:none; font-weight:100;"><font size="2" color="#999999">記事一覧</font></a></td>
+<td bgcolor="#FFFFFF" nowrap align="center"><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20121126%2Fp1&add_timestamp=1" style="text-decoration:none; font-weight:100;"><font size="2" color="#999999">ログイン</font></a></td><td bgcolor="#FFFFFF" nowrap align="center"><a href="https://www.hatena.ne.jp/register?location=http%3A%2F%2Fd.hatena.ne.jp%3Fvia%3D200186&amp;via=200186" style="text-decoration:none; font-weight:100;"><font size="2" color="#999999">無料ブログ開設</font></a></td>
+
+
+</tr>
+</tbody>
+</table>
+</center>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" bgcolor="#999999" colspan="3"><img border="0" src="http://d.hatena.ne.jp/images/dot.gif" width="1" height="1" alt=""></td>
+</tr>
+</table>
+
+
+
+<h1>よしだメモ <a href="http://a.hatena.ne.jp/append?http://d.hatena.ne.jp/rudeboyjet/"><img src="http://d.hatena.ne.jp/images/a_append_wh.gif" title="このページをアンテナに追加" alt="このページをアンテナに追加" border="0" width="16" height="12" class="icon"></a> <a href="http://d.hatena.ne.jp/rudeboyjet/rss"><img src="http://d.hatena.ne.jp/images/rss_wh.gif" alt="RSSフィード" title="RSSフィード" border="0" width="24" height="12" class="icon"></a></h1>
+<div class="hatena-body">
+<div class="main">
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+  <a rel="prev" href="/rudeboyjet/20111014/p1" class="prev">&lt; [android][scala] Scala で And...</a><span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/rudeboyjet/20121126" rel="nofollow"><span class="date">2012-11-26</span></a></h2>
+
+<div class="body">
+
+<!-- rakuten_ad_target_begin -->
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3><a href="/rudeboyjet/20121126/p1" name="p1"><span class="sanchor">■</span></a>[<a href="/rudeboyjet/searchdiary?word=%2A%5Bruby%5D" class="sectioncategory">ruby</a>][<a href="/rudeboyjet/searchdiary?word=%2A%5Brails%5D" class="sectioncategory">rails</a>][<a href="/rudeboyjet/searchdiary?word=%2A%5Bhackathon%5D" class="sectioncategory">hackathon</a>] 沖縄<a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/Hackathon">Hackathon</a> に行ってきました</h3>
+			<p>地域Rubyiest<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%DF%A5%E5%A5%CB%A5%C6%A5%A3">コミュニティ</a>のminami.rb、okinawa.rb、shibuya.rbの共催で行われた 沖縄 <a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/Hackathon">Hackathon</a>に参加してきました。</p>
+			<p>11/17 に各地で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%A4%A5%C7%A5%A2">アイデア</a>ソン。</p>
+			<p>11/<a class="keyword" href="http://d.hatena.ne.jp/keyword/23">23</a>、11/24に沖縄で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>という日程。</p>
+			<p>今回僕は大阪ミナミ(難波周辺)の地域Rubyiest <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%DF%A5%E5%A5%CB%A5%C6%A5%A3">コミュニティ</a> minami.rb <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>チームBentenの一員として参加。</p>
+			<p>沖縄だけでも移動、本選、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%D1%B8%F7">観光</a>含めると4泊5日という長い日程なので<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%A4%A5%B8%A5%A7%A5%B9%A5%C8">ダイジェスト</a>でお送りします。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%A4%A5%C7%A5%A2">アイデア</a>ソン 11/17 大阪 弁天町</h4>
+			<p>あいにくの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%AB%CC%CF%CD%CD">雨模様</a>の<a href="http://www.osakademanabu.com/bentencho/" target="_blank">中弁天町市民学習センター</a>に集合。いかにも大阪市らしいわかりにくい建物の和室が会場。当日外ではブラスバンドの演奏会があったらしくBGMで津軽海峡冬景色が流れてた。そんな中チーム分けを行い, @satomicchy と @to_uedaのチーム<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BF%EC%A4%C3%CA%A7%A4%A4">酔っ払い</a>。僕(@yalab)、@meltedice 、@murase_syuka のチームBentenとなった。</p>
+			<p>その後何を作るかをチーム毎に話し合いあーだこーだ言い合った結果チームBenten は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%A2%A5%EB%A5%BF%A5%A4%A5%E0">リアルタイム</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B0%B2%E8">動画</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E3%A5%C3%A5%C8">チャット</a>(<a class="keyword" href="http://d.hatena.ne.jp/keyword/Skype">Skype</a>みたいなの)を作る事に決定。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E3%A5%C3%A5%C8">チャット</a>が作りたかったかというとそうでも無くて「僕達は良い<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED">プロ</a>ダクトを作りたいわけじゃない。最新の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%BB%BD%D1">技術</a>を使いたいだけだ」を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%ED%A1%BC%A5%AC%A5%F3">スローガン</a>に要素<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%BB%BD%D1">技術</a>を詰め込んだ結果 <a class="keyword" href="http://d.hatena.ne.jp/keyword/ActionController">ActionController</a>::<a class="keyword" href="http://d.hatena.ne.jp/keyword/Live">Live</a> と WebRTC 辺りかなとなりそれを使うと出来上がる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%B0%B2%E8">動画</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E3%A5%C3%A5%C8">チャット</a>かなと。当日はとりあえず <a class="keyword" href="http://d.hatena.ne.jp/keyword/edge">edge</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/rails">rails</a> で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B8%A5%A7%A5%AF%A5%C8">プロジェクト</a>を作り、中央<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA">リポジトリ</a>を <a href="https://github.com/Minamirb/benten" target="_blank">https://github.com/Minamirb/benten</a> に作り各自が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%A9%A1%BC%A5%AF">フォーク</a>するところまでやって<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BF%A5%A4%A5%E0%A5%A2%A5%C3%A5%D7">タイムアップ</a>。その後<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%B2%B2%C3%BC%D4">参加者</a>全員で kyoto.rb <a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%E7%BA%C5">主催</a>の <a href="http://ujihisa.github.com/livecoding11/" target="_blank">livecoding#11</a> へ参加したんだけどそれはまた別の話。</p>
+			<h4> もくもく 11/18<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>11/21 自宅とかカフェとか</h4>
+			<p>「もくもくする」と言った時に一般の方<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>は「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BF%A5%D0%A5%B3">タバコ</a>？」と聞かれたりする<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%A3%C6%FC%A4%B3%A4%CE%BA%A2">今日この頃</a>。<a class="keyword" href="http://d.hatena.ne.jp/keyword/IT">IT</a>系(の一部) の人の間では「黙々と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%D9%B6%AF">勉強</a>や<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C7%A5%A3%A5%F3%A5%B0">コーディング</a>を行う」事を略して「もくもくする」と言う。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%A4%A5%C7%A5%A2">アイデア</a>ソン<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>までの一週間はもくもくの期間。僕たちのチームはさっそく pull request <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D9%A1%BC%A5%B9">ベース</a>で開発をはじめた。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BD%A1%BC%A5%B7%A5%E3%A5%EB">ソーシャル</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C7%A5%A3%A5%F3%A5%B0">コーディング</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%D9%B6%AF">勉強</a>にもということでやりとりは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B1%D1%B8%EC">英語</a>。その辺の軌跡は <a href="https://github.com/Minamirb/benten/pulls?direction=desc&page=1&sort=created&state=closed" target="_blank">github の pull request</a> を参照。Benten チームでは無いけどもくもくの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%C3%E6">最中</a>に @to_ueda が <a class="keyword" href="http://d.hatena.ne.jp/keyword/rails">rails</a> の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D0%A5%B0">バグ</a>を踏み。 <a href="https://github.com/rails/rails/pull/8257" target="_blank">rails チームへpull request を送る</a>などといった事も。残念ながら<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%DE%A1%BC%A5%B8">マージ</a>はされなかった<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>の <a class="keyword" href="http://d.hatena.ne.jp/keyword/rails">rails</a> の安定化に一つ貢献ができたわけでもうすでに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CD%AD%B0%D5%B5%C1">有意義</a>な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>になった。</p>
+			<h4> 移動日 11/22 大阪 -&gt; 沖縄</h4>
+			<p>@satomicchy は21日に移動したり @murase_syuka は <a class="keyword" href="http://d.hatena.ne.jp/keyword/23">23</a>日に移動したりと各自の都合で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%A1%BC%EA">勝手</a>に現地へというやり方だっったので僕は22日に移動しました。初の<a class="keyword" href="http://d.hatena.ne.jp/keyword/LCC">LCC</a>(Peach)で初沖縄へ。早めに関西国際空港へ移動したりしたので<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%C3%A4%CB">特に</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C8%A5%E9%A5%D6%A5%EB">トラブル</a>も無く搭乗。さすがに席は狭いけど1.5h程度だし値段を考えれば<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%B4%C1%B3">全然</a>アリだなという<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%B6%C1%DB">感想</a>。そして那覇空港で @satomicchy、@to_ueda と合流し<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EC%A5%F3%A5%BF%A5%AB%A1%BC">レンタカー</a>を借りて一路宿へ。</p>
+			<p>この日は栄<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%D4%BE%EC">市場</a>で沖縄そばをいただき<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A1%BC%A5%D1%A1%BC">スーパー</a>で買い物をして宿へ戻る。宿では<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A1%BC%A5%D1%A1%BC">スーパー</a>で買ったオリオンビールや泡盛を飲みながらやはり<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C9">コード</a>をひたすら書いた。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>1日目 11/<a class="keyword" href="http://d.hatena.ne.jp/keyword/23">23</a> 沖縄<a class="keyword" href="http://d.hatena.ne.jp/keyword/IT">IT</a>津梁パーク</h4>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>初日はとりあえず会場に集まってもくもく<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C9">コード</a>を書きまくった。以上。</p>
+			<p>会場<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A2%C2%F0">帰宅</a>して<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>もやっぱり<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C9">コード</a>を書きまくったり。というのもやはりしかしながらどうして<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CC%C0%C6%FC">明日</a>までに動く<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>を作らなければいけないという<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%C3%A5%B7%A5%E3%A1%BC">プレッシャー</a>。僕はすでに <a class="keyword" href="http://d.hatena.ne.jp/keyword/Ajax">Ajax</a> で文字を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C5%EA%B9%C6">投稿</a>し <a class="keyword" href="http://d.hatena.ne.jp/keyword/ActionController">ActionController</a>::<a class="keyword" href="http://d.hatena.ne.jp/keyword/Live">Live</a> で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E9%A5%A4%A5%D6">ライブ</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%C8%A5%EA%A1%BC%A5%E0">ストリーム</a>でその文字を流す部分の実装を終える事ができたのでわりと余裕。 <a class="keyword" href="http://d.hatena.ne.jp/keyword/ActionController">ActionController</a>::<a class="keyword" href="http://d.hatena.ne.jp/keyword/Live">Live</a> についてはいくつか(も)ハマったのでこの辺は別<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A8%A5%F3%A5%C8%A5%EA%A1%BC">エントリー</a>で解説することにする。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>2日目 11/24 沖縄<a class="keyword" href="http://d.hatena.ne.jp/keyword/IT">IT</a>津梁パーク</h4>
+			<p>2日目にして最終日。この日は 14:00 まで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%B8%E5">最後</a>の詰めと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%BC%A5%F3">プレゼン</a>資料の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%EE%C0%AE">作成</a>をして 14:00 <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>はそれぞれのチームの発表。発表の内容などは<a href="http://railshackathon.net/teams" target="_blank">公式サイトにだいたい載ってる</a>のでそちらを。<a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%C7%A4%A2%A4%EB">である</a>にも関わらずまったく <a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a>、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%C3%A4%C8">もっと</a>言えば <a class="keyword" href="http://d.hatena.ne.jp/keyword/Ruby">Ruby</a> すら使わなかった ScreenX が優勝など緩さ全開ではあった<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>の書くチーム <a class="keyword" href="http://d.hatena.ne.jp/keyword/Edge">Edge</a> にを使ってみてたりアニメーションで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%BC%A5%F3">プレゼン</a>受けを狙ってたりいろいろとおもしろかった。この日は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>終了後懇親会も行った。泡盛をgokgok飲みつつ島唄を合唱したりとなんしかすごかった。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%D1%B8%F7">観光</a> 11/25 いろいろ</h4>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>は既に終わったけれどせっかくの沖縄だし<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%D1%B8%F7">観光</a>もしないとね(そのために3<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CF%A2%B5%D9">連休</a>を選んでる)ということで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%D1%B8%F7">観光</a>へ。 minami.rb では @meltedice が行きたいところがある<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>と別行動。それ以外のメンバーと okinawa.rb の @yasulab が参加。前日に夜なべして @to_ueda が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D4%A5%C3%A5%AF%A5%A2%A5%C3%A5%D7">ピックアップ</a>した<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%DD%A5%C3%A5%C8">スポット</a>を巡る。オリオンビールの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B9%A9%BE%EC">工場</a>を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%AB%B3%D8">見学</a>したりすごく<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CA%B7%B0%CF%B5%A4">雰囲気</a>のいいお店で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E9%A5%F3%A5%C1">ランチ</a>したり、泡盛の倉を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B8%AB%B3%D8">見学</a>しようとしたら残念ながら<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BB%FE%B4%D6">時間</a>が合わなかったり、海岸線を通ってビーチへ行ったり、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%CE%A4%DC%A4%EA">のぼり</a>窯を見て焼き物や琉球<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%AC%A5%E9%A5%B9">ガラス</a>を見たりとにかく前日までは雨が降ったり止んだりとぐずついた天気だったけどこの日はすごく快晴で海もとても綺麗ですごく良かった。</p>
+			<h4> 最終日 11/26 沖縄 -&gt; 大阪</h4>
+			<p>いよいよ最終日。大阪で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BD%AA%C5%C5">終電</a>に間に合わなくなる事を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%ED%D7%FC">危惧</a>して僕は一足早めの15:40の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%F4%B9%D4%B5%A1">飛行機</a>で帰ることにしていた。ということで @meltedice に空港まで送ってもらって一旦荷物を預けた後、国際通りへ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AA%C5%DA%BB%BA">お土産</a>を買いにいった。途中<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>すごい雨と風に襲われたりもしたけれどなんとか<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AA%C5%DA%BB%BA">お土産</a>やの中でしのいだり、食堂で<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E9%A5%F3%A5%C1">ランチ</a>をしながらしのいだり、カフェで<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A5%E3%A5%A4">チャイ</a>ーを飲みながらしのいだりして結局傘を買わずにねばった。結局悪天候のため30分ほど<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%F4%B9%D4%B5%A1">飛行機</a>が飛ぶのが遅れたのだけど、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C6%C3%A4%CB">特に</a>目立った<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C8%A5%E9%A5%D6%A5%EB">トラブル</a>もなく無事<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A2%C2%F0">帰宅</a>。前日はわりとよく眠れたし、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C8%F4%B9%D4%B5%A1">飛行機</a>でもしっかり寝れたので思ったより疲れを残さないまま<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%A2%C2%F0">帰宅</a>。ということで今<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D6%A5%ED%A5%B0">ブログ</a>を書いていたりする。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%B4%B6%C1%DB">感想</a>など</h4>
+			<p>期間も長かったためいろいろ思うところはあるので思いついたところ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%AB%A4%E9">から</a>書く。チームとしての<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>の成果としては pull request <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D9%A1%BC%A5%B9">ベース</a>でやった開発は得る<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>が多かったんじゃないかと思う。個人的な成果としては <a class="keyword" href="http://d.hatena.ne.jp/keyword/ActionController">ActionController</a>::<a class="keyword" href="http://d.hatena.ne.jp/keyword/Live">Live</a> が苦労はしたけど思い通りに動かすことができて良かった。</p>
+			<p>他<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A5%DF%A5%E5%A5%CB%A5%C6%A5%A3">コミュニティ</a>との絡みとしては以前 yokohama.rb とやった伊東の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%CF%A5%C3%A5%AB%A5%BD%A5%F3">ハッカソン</a>の時のように同じ部屋に寝泊まりしてやる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%BF%A5%A4%A5%EB">スタイル</a>のほうがよかった。それと懇親会は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%B8%E5">最後</a>にやるんじゃなくて<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%BD%E9">最初</a>にやったほうが<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B3%A1%BC%A5%C9">コード</a>書いてる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%C3%E6">最中</a>に気軽に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BC%C1%CC%E4">質問</a>にいけたりできたんじゃないだろうか。</p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/LCC">LCC</a> を使うと意外に沖縄へも気楽にいける値段だったことも大きな収穫だった。</p>
+			<p>沖縄そばは美味かった。大阪で食べるよりもはるかにおいしくて、多分現地の気候と水のせいだと思う。</p>
+			<p>1週間程度だったとは笑いあり涙あり、かつ新<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B5%BB%BD%D1">技術</a>を触ってみたり知り合いが増えたり<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C2%CE%BD%C5">体重</a>が増えたりとても楽しかった。</p>
+			<h4> <a class="keyword" href="http://d.hatena.ne.jp/keyword/%BA%C7%B8%E5">最後</a>にすでに張ってる<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%E2%A4%CE">もの</a>もあるけど各種<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%EA%A5%F3%A5%AF">リンク</a>を張っておく。</h4>
+
+			<ul>
+				<li> <a href="http://railshackathon.net/" target="_blank">RailsHackathon 公式サイト</a></li>
+				<li> <a href="http://togetter.com/li/412477" target="_blank">Togetter-  Rails Hackathon in 沖縄 #railshackathon</a></li>
+			</ul>
+			<p class="sectionfooter"><a href="/rudeboyjet/20121126/p1">Permalink</a> | <a href="/rudeboyjet/20121126/p1#c">コメント(0)</a> | <a href="/rudeboyjet/20121126/p1#tb">トラックバック(0)</a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/rudeboyjet/20121126/p1" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title=" 沖縄Rails Hackathon に行ってきましたを含むブックマーク" alt=" 沖縄Rails Hackathon に行ってきましたを含むブックマーク" width="16" height="12" class="icon"></a></p>
+
+		</div>
+<div id="google_afc_user" class="section">
+  <script type="text/javascript"><!--
+     hatena_dfp_tag       = '/4374287/diary_user';
+     hatena_dfp_size      = [[300, 250], [336, 280]];
+     hatena_dfp_target_id = 'google_afc_user';
+  --></script>
+  <script type="text/javascript" src="http://ad.hatena.ne.jp/js/hatena_dfp-compiled.js"></script>
+</div>
+
+<!-- google_ad_section_end -->
+<!-- rakuten_ad_target_end -->
+
+
+</div>
+
+<form id="comment-form" method="post" action="/rudeboyjet/comment#c" class="comment">
+<input type="hidden" name="mode" value="enter">
+<input type="hidden" name="rkm" value="">
+<input type="hidden" name="date" value="2012-11-26">
+<div class="comment">
+  <div class="caption"><a name="c">コメントを書く</a></div>
+  <div class="commentshort">
+    
+    
+
+    <a name="error-message"></a>
+    <p class="message" style="display:none"></p>
+
+    
+
+    
+            
+    <p class="commentform">
+      <span class="commentator">
+        <span class="usermailconfirm"><input name="usermail" size="1" value=""><input name="userurl" size="1" value="">スパム対策のためのダミーです。もし見えても何も入力しないでください<br></span>
+        <span class="username">
+        <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ゲスト" title="ゲスト" height="16" width="16">
+        <input type="hidden" name="section" value="p1">
+        
+          <input id="comment-username" name="username" size="15">
+        
+        </span>
+        
+          <span class="usermail"><img src="/images/icon-usermail.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-usermail" name="useremail" size="15" value=""></span>
+          <span class="userurl"><img src="/images/icon-userurl.gif" style="vertical-align:middle;margin-right:3px;"><input id="comment-userurl" name="useruri" size="15" value=""></span>
+        
+      </span>
+<br>
+      <!-- NOT_VERIFIED_COMMENT_AUTH -->
+      <textarea id="comment-textarea" name="body" value="" cols="60" rows="3"></textarea><br>
+      
+          <div class="captcha">
+            <img src="/rudeboyjet/captcha?1385886620" class="captcha-image">
+            <span class="captcha-message">画像認証</span><br />
+            <input type="text" name="captcha_code" size="10" class="captcha-string" id="comment-captcha">
+          </div>
+      
+      <span class="comment-submit"><input type="submit" id="comment-form-button" value="投稿"></span>
+    </p>
+
+      <script type="text/javascript" src="/js/diary_comment_edit_form.js"></script>
+    
+
+  </div>
+</div>
+
+</form>
+
+
+
+
+
+  
+  <div class="refererlist">
+    <div class="caption">
+      <a name="tb">トラックバック</a> - http://d.hatena.ne.jp/rudeboyjet/20121126/p1
+    </div>
+    
+  </div>
+  
+  
+
+
+
+
+
+    <div class="refererlist">
+      <div class="caption">リンク元</div>
+      <ul>
+          <li>2643 <a href="https://www.google.co.jp/" rel="nofollow">https://www.google.co.jp/</a></li>
+          <li>873 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CC4QFjAA&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20060903%2Fp3&amp;ei=ioizUJeQA-n4mAXn3oAY&amp;usg=AFQjCNFTByp3Dqtihfgj3TPf9ugLDb8sow&amp;sig2=aPW0pPbBO1gD7G9zUkByJg" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CC4QFjAA&amp;url=http://d.hatena.ne.jp/rudeboyjet/20060903/p3&amp;ei=ioizUJeQA-n4mAXn3oAY&amp;usg=AFQjCNFTByp3Dqtihfgj3TPf9ugLDb8sow&amp;sig2=aPW0pPbBO1gD7G9zUkByJg</a></li>
+          <li>393 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CDkQFjAB&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20070226%2Fp1&amp;ei=LJ2zUIazHerMmgWxsIDQDA&amp;usg=AFQjCNErLDIwN6Jc3YExyShBeYiawIooIA&amp;sig2=ss1tdUmhsRnf3FRFUTOqQw" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0CDkQFjAB&amp;url=http://d.hatena.ne.jp/rudeboyjet/20070226/p1&amp;ei=LJ2zUIazHerMmgWxsIDQDA&amp;usg=AFQjCNErLDIwN6Jc3YExyShBeYiawIooIA&amp;sig2=ss1tdUmhsRnf3FRFUTOqQw</a></li>
+          <li>337 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=5&amp;ved=0CFcQFjAE&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20060903%2Fp3&amp;ei=-J20UI_MBorMmgXRrIBY&amp;usg=AFQjCNFTByp3Dqtihfgj3TPf9ugLDb8sow&amp;sig2=fhtvwoC88SUBAW5S_Zb-vQ" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;frm=1&amp;source=web&amp;cd=5&amp;ved=0CFcQFjAE&amp;url=http://d.hatena.ne.jp/rudeboyjet/20060903/p3&amp;ei=-J20UI_MBorMmgXRrIBY&amp;usg=AFQjCNFTByp3Dqtihfgj3TPf9ugLDb8sow&amp;sig2=fhtvwoC88SUBAW5S_Zb-vQ</a></li>
+          <li>287 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;ved=0CEMQFjAC&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20091001%2Fp1&amp;ei=H6uzUImjLsqjmQX9s4H4Dw&amp;usg=AFQjCNHsyBGo4lZg9fDCgXzvb1-Qds6Rgg&amp;sig2=qIx4Xh90XFKSKbmWDPz0wg&amp;cad=rjt" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;ved=0CEMQFjAC&amp;url=http://d.hatena.ne.jp/rudeboyjet/20091001/p1&amp;ei=H6uzUImjLsqjmQX9s4H4Dw&amp;usg=AFQjCNHsyBGo4lZg9fDCgXzvb1-Qds6Rgg&amp;sig2=qIx4Xh90XFKSKbmWDPz0wg&amp;cad=rjt</a></li>
+          <li>251 <a href="https://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CC4QFjAA&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20100404%2Fp1&amp;ei=KGf0UaqVIcOxkAW6joCACw&amp;usg=AFQjCNFQVLT3n9EAY8PC3axf8J2IFHLjow&amp;sig2=zLMwCwd4vtzTwcSXYjI61w" rel="nofollow">https://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CC4QFjAA&amp;url=http://d.hatena.ne.jp/rudeboyjet/20100404/p1&amp;ei=KGf0UaqVIcOxkAW6joCACw&amp;usg=AFQjCNFQVLT3n9EAY8PC3axf8J2IFHLjow&amp;sig2=zLMwCwd4vtzTwcSXYjI61w</a></li>
+          <li>191 <a href="https://www.google.com/" rel="nofollow">https://www.google.com/</a></li>
+          <li>187 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=4&amp;ved=0CEYQFjAD&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20061010%2Fp1&amp;ei=uze0UKrjK9GUiQffwYDYAg&amp;usg=AFQjCNG8axia_boqBaSiIjvJQj3LJkJQuw&amp;sig2=kvjaNBd_dYPz6D8egpkIGA" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=4&amp;ved=0CEYQFjAD&amp;url=http://d.hatena.ne.jp/rudeboyjet/20061010/p1&amp;ei=uze0UKrjK9GUiQffwYDYAg&amp;usg=AFQjCNG8axia_boqBaSiIjvJQj3LJkJQuw&amp;sig2=kvjaNBd_dYPz6D8egpkIGA</a></li>
+          <li>114 <a href="http://d.hatena.ne.jp/raugisu/20120428/1335598633" rel="nofollow">http://d.hatena.ne.jp/raugisu/20120428/1335598633</a></li>
+          <li>98 <a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CEkQFjAE&amp;url=http%3A%2F%2Fd.hatena.ne.jp%2Frudeboyjet%2F20070913%2Fp1&amp;ei=twG2ULDnMeHamAWSi4C4BQ&amp;usg=AFQjCNG4v1ah4IXlwLVYKWEPTR7CTUBefA" rel="nofollow">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CEkQFjAE&amp;url=http://d.hatena.ne.jp/rudeboyjet/20070913/p1&amp;ei=twG2ULDnMeHamAWSi4C4BQ&amp;usg=AFQjCNG4v1ah4IXlwLVYKWEPTR7CTUBefA</a></li>
+      </ul>
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+  <a rel="prev" href="/rudeboyjet/20111014/p1" class="prev">&lt; [android][scala] Scala で And...</a>
+</div>
+</div>
+<div class="sidebar">
+	<div class="hatena-module hatena-module-searchform">
+<div class="hatena-moduletitle">日記の検索</div>
+<div class="hatena-modulebody">
+<form method="GET" action="/rudeboyjet/searchdiary" class="hatena-searchform"><input type="text" name="word" class="hatena-searchform searchform-word" value=""><input type="submit" name=".submit" value="検索" class="hatena-searchform searchform-button"><br><label class="searchform-label-detail"><input type="radio" name="type" value="detail" checked="checked" class="searchform-radio">詳細</label> <label class="searchform-label-list"><input type="radio" name="type" value="list" class="searchform-radio">一覧</label></form>
+
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-calendar2">
+<div class="hatena-moduletitle">カレンダー</div>
+<div class="hatena-modulebody">
+<table class="calendar" summary="calendar">
+<tr>
+<td class="calendar-prev-month" colspan="2"><a href="/rudeboyjet/201210" title="201210" rel="nofollow">&lt;&lt;</a></td>
+<td class="calendar-current-month" colspan="3"><a href="/rudeboyjet/archive/201211" rel="nofollow">2012/11</a></td>
+<td class="calendar-next-month" colspan="2"><a href="/rudeboyjet/201212" title="201212" rel="nofollow">&gt;&gt;</a></td>
+</tr>
+<tr>
+<td class="calendar-sunday">日</td>
+<td class="calendar-weekday">月</td>
+<td class="calendar-weekday">火</td>
+<td class="calendar-weekday">水</td>
+<td class="calendar-weekday">木</td>
+<td class="calendar-weekday">金</td>
+<td class="calendar-saturday">土</td>
+</tr>
+	<tr>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day">1</td>
+		<td class="calendar-day">2</td>
+		<td class="calendar-day">3</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">4</td>
+		<td class="calendar-day">5</td>
+		<td class="calendar-day">6</td>
+		<td class="calendar-day">7</td>
+		<td class="calendar-day">8</td>
+		<td class="calendar-day">9</td>
+		<td class="calendar-day">10</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">11</td>
+		<td class="calendar-day">12</td>
+		<td class="calendar-day">13</td>
+		<td class="calendar-day">14</td>
+		<td class="calendar-day">15</td>
+		<td class="calendar-day">16</td>
+		<td class="calendar-day">17</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">18</td>
+		<td class="calendar-day">19</td>
+		<td class="calendar-day">20</td>
+		<td class="calendar-day">21</td>
+		<td class="calendar-day">22</td>
+		<td class="calendar-day">23</td>
+		<td class="calendar-day">24</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">25</td>
+		<td class="calendar-day day-selected"><a href="/rudeboyjet/20121126" title="26">26</a></td>
+		<td class="calendar-day">27</td>
+		<td class="calendar-day">28</td>
+		<td class="calendar-day">29</td>
+		<td class="calendar-day">30</td>
+		<td class="calendar-day"></td>
+	</tr>
+</table>
+	</div>
+</div>
+
+	<div class="hatena-module hatena-module-section">
+<div class="hatena-moduletitle"><a href="/rudeboyjet/archive">最新タイトル</a></div>
+<div class="hatena-modulebody">
+<ul class="hatena-section">
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20121126/p1">[ruby][rails][hackathon] 沖縄Rails Hackathon に行ってきました</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20111014/p1"> [android][scala] Scala で Android アプリを作成する環境を作る</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20111003/p1">[minamirb] minami.rbの第9回勉強会で発表してきました。</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20110903/p1"> [android][scala] レッッツVOAリリース</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20110803/p1"> [ruby] railsで古いバージョンで新しいプロジェクトを作る</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20110629/p1">[minamirb] RailsHackathon に行ってきました</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20110519/p1"> [scala] Scalaで画像を保存</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20101221/p1"> [rails] ActiveRecord3の connection_pool の挙動を調べた</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20101001/p1"> [rails] 任意の位置にエラーメッセージを表示するViewヘルパー</a></li>
+<li><a href="http://d.hatena.ne.jp/rudeboyjet/20100919/p1"> [rails] Rails3からSinatraを呼ぶ</a></li>
+</ul>
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">カテゴリー</div>
+<div class="hatena-modulebody">
+<ul class="hatena-sectioncategory">
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5B%C6%FC%B5%AD%5D">日記</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bruby%5D">ruby</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bprograming%5D">programing</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bc%5D">c</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bother%5D">other</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5BEnglish%5D">English</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5BhariboteOS%5D">hariboteOS</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Blinux%5D">linux</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bsicp%5D">sicp</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bmysql%5D">mysql</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bemacs%5D">emacs</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bpostgres%5D">postgres</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Betch%5D">etch</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bbash%5D">bash</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bqemu%5D">qemu</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bkurobox%5D">kurobox</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bperl%5D">perl</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bvi%5D">vi</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bhtml%5D">html</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5B%BB%A8%B5%AD%5D">雑記</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bubuntu%5D">ubuntu</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Brails%5D">rails</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bbsd%5D">bsd</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bpython%5D">python</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bpostfix%5D">postfix</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bsakura%5D">sakura</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bphp%5D">php</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Berl%5D">erl</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Btips%5D">tips</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bqmail%5D">qmail</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bgit%5D">git</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bmerb%5D">merb</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bmlterm%5D">mlterm</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bsvn%5D">svn</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bjs%5D">js</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bcanvas%5D">canvas</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bminamirb%5D">minamirb</a></li>
+<li><a href="/rudeboyjet/searchdiary?word=%2A%5Bhackathon%5D">hackathon</a></li>
+</ul>
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-trackback">
+<div class="hatena-moduletitle">最近のトラックバック</div>
+<div class="hatena-modulebody">
+<ul class="hatena-recentcomment">
+<li><a href="/rudeboyjet/20101221/p1#tb">2010-12-21</a>&nbsp;<a href="http://d.hatena.ne.jp/raugisu/20120429/1335725405">車輪の再発明 - Railsでconnection数を破綻させずに別DBを利用する</a></li>
+<li><a href="/rudeboyjet/20101221/p1#tb">2010-12-21</a>&nbsp;<a href="http://d.hatena.ne.jp/raugisu/20120428/1335598633">車輪の再発明 - ActiveRecordのestablish_connectionに気をつけろ</a></li>
+<li><a href="/rudeboyjet/20111014#tb">2011-10-14</a>&nbsp;<a href="http://d.hatena.ne.jp/seiyan1978/20111016/1318781101">広く浅く、Web技術を眺める - 第1回Scala勉強会大阪に行ってきまし...</a></li>
+<li><a href="/rudeboyjet/20111014#tb">2011-10-14</a>&nbsp;<a href="http://d.hatena.ne.jp/seiyan1978/20111016/1318781101">広く浅く、Web技術を眺める - 第1回Scala勉強会大阪に行ってきまし...</a></li>
+<li><a href="/rudeboyjet/20111014#tb">2011-10-14</a>&nbsp;<a href="http://d.hatena.ne.jp/seiyan1978/20111016/1321461865">広く浅く、Web技術を眺める - 「Web Framework Lift」セッション</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var days = document.getElementById('days');
+  if (days && days.innerHTML.indexOf("今週のお題") != -1) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u4eca\u9031\u306e\u304a\u984c/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'odai', 3]);
+  }
+
+  if (days && /\u6d77\u5916\u30c9\u30e9\u30de\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u89b3\u305f\u3044\uff01|\u300e\u30e9\u30a4\u30fb\u30c8\u30a5\u30fb\u30df\u30fc \u5618\u306e\u77ac\u9593\u300f\u7b2c1\u8a71\u306e\u611f\u60f3\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u4eca\u3060\u304b\u3089\u8a00\u3048\u308b\u300c\u5618\u3092\u3064\u3044\u3066\u3057\u307e\u3063\u305f\u30a8\u30d4\u30bd\u30fc\u30c9\u300d\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3060\u307e\u3055\u308c\u305f\u3051\u3069\u3001\u8a31\u305b\u3066\u3057\u307e\u3063\u305f\u5618\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'lietome', 3]);
+  }
+
+  if (days && /\u7d0d\u6dbc\uff01\u307b\u3093\u3068\u306b\u3042\u3063\u305f\u6016\u3044\u30b3\u30fc\u30c9/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_1', 3]);
+  }
+
+  if (days && /\u590f\u306e\u5199\u771f2013/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'photocon2013summer', 3]);
+  }
+
+  if (days && /Windows\/Office\u6b66\u52c7\u4f1d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'WindowsDevOpen', 3]);
+  }
+
+  if (days && /\u300c\u79c1\u306f\u3007\u3007\u738b\uff01\u300d\u30d0\u30a4\u30af\u738b\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bike-o', 3]);
+  }
+
+  if (days && /Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u8a66\u3057\u305f\u3044\uff01|Visa\u30d7\u30ea\u30da\u30a4\u30c9\u300cV\u30d7\u30ea\u30ab\u300d\u3001\u81ea\u5206\u306a\u3089\u3053\u3046\u4f7f\u3046\uff01|V\u30d7\u30ea\u30ab\u304c1\u4e07\u5186\u5206\u3042\u3063\u305f\u3089\u3001\u30cd\u30c3\u30c8\u3067\u4f55\u3092\u8cb7\u3044\u307e\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'vpreca', 3]);
+  }
+
+  if (days && /\u30a2\u30a4\u30c7\u30e0 \u30a8\u30f3\u30b8\u30cb\u30a2\u30ad\u30e3\u30ea\u30a2Hacks\u5171\u6709\u30d7\u30ed\u30b8\u30a7\u30af\u30c8|\u30a8\u30f3\u30b8\u30cb\u30a2\u3068\u3057\u3066\u306e\u3001\u3068\u3063\u3066\u304a\u304d\u306e\u30ad\u30e3\u30ea\u30a2Hacks\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044|\u3042\u306a\u305f\u304c\u30a8\u30f3\u30b8\u30cb\u30a2\u8ee2\u8077\u30b5\u30a4\u30c8\u3092\u4f5c\u308b\u306a\u3089\u3001\u3069\u3093\u306a\u30b5\u30a4\u30c8\u306b\u3057\u307e\u3059\u304b\uff1f|5\u5e74\u5f8c\u306e\u300c\u30a8\u30f3\u30b8\u30cb\u30a2\u306e\u50cd\u304d\u65b9\u300d\u306f\u3001\u3069\u3046\u5909\u308f\u3063\u3066\u3044\u3066\u307b\u3057\u3044\u3067\u3059\u304b\uff1f/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'aidemcareer', 3]);
+  }
+
+  if (days && /\u306f\u3066\u306a\u30c0\u30a4\u30a2\u30ea\u30fc10\u5468\u5e74\u304a\u3081\u3067\u3068\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'hatenadiary10th', 3]);
+  }
+
+  if (days && /CodeIQ\u306e\u554f\u984c\u30fb\u30d1\u30ba\u30eb\u3092\u8003\u3048\u3088\u3046\uff01/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'codeiq_matsuri2013_2_2', 3]);
+  }
+
+  if (days && /\u8aad\u307f\u653e\u984c\u3067\u30b3\u30b9\u30d1\u3088\u3057\uff01\u96fb\u5b50\u66f8\u7c4d\u30a2\u30d7\u30eayomel.jp\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'yomel', 3]);
+  }
+
+  if (days && /2013\u5e74\u306b\u3084\u308a\u305f\u3044\u3053\u3068/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'newyear2013', 3]);
+  }
+
+  if (days && /\u30bb\u30c4\u30e4\u30af\u30a8\u30b9\u30c8/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'setsuyaquest', 3]);
+  }
+
+  if (days && /2012\u5e74\u30dc\u30c4\u738b\u6c7a\u5b9a\u6226\uff01\u30d5\u30eb\u30bf\u88fd\u83d3\ud7\u306f\u3066\u306a\u30d6\u30ed\u30b0\u304a\u984c\u30ad\u30e3\u30f3\u30da\u30fc\u30f3/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'furuta', 3]);
+  }
+
+  if (days && /\u79cb\u306e\u591c\u9577\u306f\u8aad\u66f8\u3068\u30d6\u30ed\u30b0/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'bookreview2013fall', 3]);
+  }
+
+  if (days && /\u7279\u5225\u304a\u984c\u300c\u82b8\u8853\u306e\u79cb\u300d/.test(days.innerHTML)) {
+    _gaq.push(['_setCustomVar', 2, 'campaign', 'caillebotte', 3]);
+  }
+
+  _gaq.push(
+  ['_setAccount', 'UA-441387-31'],
+  ['_setCustomVar', 1, 'afc_type', 'inactive', 3],
+  ['_setCustomVar', 3, 'theme', 'hatena_simple-red', 3],
+  ['_setCustomVar', 4, 'usertype', 'guest', 1],
+  ['_trackPageview'],
+  ['b._setAccount', 'UA-7855606-1'],
+  ['b._setDomainName', '.hatena.ne.jp'],
+  ['b._trackPageview']
+  ,['c._setAccount', 'rudeboyjet'],
+  ['c._trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- CG:1,CH:1,ICG:25,ICH:20,T: -->
+</body>
+</html>
