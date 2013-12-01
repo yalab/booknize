@@ -1,3 +1,5 @@
+require 'booknize/formatter/base'
+
 module Booknize
   module Formatter
     class << self
