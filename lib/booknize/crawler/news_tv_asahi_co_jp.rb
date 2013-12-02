@@ -1,7 +1,7 @@
 module Booknize
   module Crawler
     class NewsTvAsahiCoJp < Base
-      CONTENT = ['#news_title', '#news_body']
+      CONTENT = {h1: '#news_title', div: '#news_body'}
     end
   end
 end

@@ -7,21 +7,21 @@ module Booknize
       end
 
       def format!
-        @document.css("script").map(&:remove)
+        @document.css("script, style, link").map(&:remove)
         body = Nokogiri::XML::Node.new('body', @document)
-        if self.class.const_defined?(:CONTENT)
-          content_class = self.class.const_get(:CONTENT)
-          content_class = [content_class] unless content_class.is_a?(Array)
-          content_class.each do |klass|
-            body << @document.css("#{klass}").children
+        if contents = self.class.const_defined?(:CONTENT) && self.class.const_get(:CONTENT)
+          contents.each do |tag, klass|
+            node = Nokogiri::XML::Node.new(tag.to_s, @document)
+            children = @document.css(klass)
+            if (tag == :h1 && klass =~ /#{tag}$/) || klass  =~ /a$/
+              children = children.children
+            end
+            node.children = children
+            body << node
           end
         end
 
         @document.css("body").first.replace(body)
-        if self.class.const_defined?(:REMOVE)
-          remove_class = self.class.const_get(:REMOVE)
-          @document.css("#{remove_class}").remove
-        end
         self
       end
 

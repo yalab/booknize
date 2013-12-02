@@ -1,8 +1,7 @@
 module Booknize
   module Crawler
     class JpWsjCom < Base
-      CONTENT = [".articleHeadlineBox", ".articlePage"]
-      REMOVE = '#adJapan BusinessL'
+      CONTENT = {h1: '.articleHeadlineBox h1', div: '.articlePage', 'div.last-updated' => ".dateStamp"}
     end
   end
 end

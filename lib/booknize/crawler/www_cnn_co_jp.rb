@@ -1,7 +1,7 @@
 module Booknize
   module Crawler
     class WwwCnnCoJp < Base
-      CONTENT = '#leaf-body'
+      CONTENT = {h1: '.headline-lrg', div: '#leaf-body > p'}
     end
   end
 end

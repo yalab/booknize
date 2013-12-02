@@ -1,8 +1,7 @@
 module Booknize
   module Crawler
     class WwwYomiuriCoJp < Base
-      CONTENT = '.article-def'
-      REMOVE  = '.sbtns'
+      CONTENT = {h1: '.article-def > h1', div: '.article-def > p', :'div.date-def' => '.date-def'}
     end
   end
 end

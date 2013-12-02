@@ -5,6 +5,7 @@ module Booknize
     class << self
       def new(link)
         uri = URI.parse(link)
+        p uri
         host = case uri.host
                when 'news.google.com'
                  URI.parse(Rack::Utils.parse_query(uri.query)['url']).host
