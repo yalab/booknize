@@ -24,14 +24,9 @@ module Booknize
 
       book.ordered {
         rss.items.each.with_index(1) do |item, i|
-          relative_path = "#{i}.html"
           body = nil
-          open(item.link) do |f|
-            body = f.read
-          end
-          if formatter = Booknize::Formatter.get(@uri.host)
-            body = formatter.new(body).format!.content
-          end
+          crawler = Booknize::Crawler.new(item.link)
+          body = crawler.get.body
           book.add_item("text/#{i}.html").add_content(StringIO.new(body)).toc_text(item.title)
         end
       }

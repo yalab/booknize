@@ -5,7 +5,7 @@ require 'active_support/core_ext/module/delegation'
 require 'active_support/core_ext/string/inflections'
 require "booknize/version"
 require "booknize/rss"
-require "booknize/formatter"
+require "booknize/crawler"
 
 module Booknize
   # Your code goes here...
