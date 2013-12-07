@@ -19,7 +19,7 @@ module Booknize
 
       book = GEPUB::Book.new
       book.language = 'ja'
-      book.set_primary_identifier(@uri, 'BookID', 'URL')
+      book.set_main_id(@uri, 'BookID', 'URL')
       book.add_title(channel.title, nil, GEPUB::TITLE_TYPE::MAIN)
 
       book.ordered {
